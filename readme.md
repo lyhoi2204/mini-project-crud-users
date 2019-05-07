@@ -12,17 +12,9 @@ Build Docker
 docker-compose -f .docker/docker-compose.yml up --build -d
 ```
 
-Get CONTAINER ID docker_web
-```
-docker ps
-```
-Run migration
-```
-docker exec -it <CONTAINERID> php artisan migrate
-```
-
 ## Unit test
 
+run unit test
 ```
 docker exec -it <CONTAINERID> ./vendor/bin/phpunit
 ```
